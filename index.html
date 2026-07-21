@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zingoz - Taste the Zing</title>
+    <title>Zingoz Restaurant - Taste the Zing</title>
     <style>
-        /* CSS Styling */
         * {
             margin: 0;
             padding: 0;
@@ -19,10 +18,9 @@
             text-align: center;
         }
 
-        /* Header / Hero Section */
         header {
             background: linear-gradient(180deg, #d32f2f, #121212);
-            padding: 40px 20px;
+            padding: 30px 15px;
         }
 
         .logo-title {
@@ -30,37 +28,36 @@
             color: #ffeb3b;
             font-weight: bold;
             margin-bottom: 5px;
-            text-transform: uppercase;
         }
 
         .tagline {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #ffffff;
             margin-bottom: 15px;
             font-style: italic;
         }
 
         .free-delivery {
-            background-color: #4caf50;
+            background-color: #2e7d32;
             color: white;
             padding: 8px 20px;
             border-radius: 20px;
             display: inline-block;
             font-weight: bold;
             font-size: 1.1rem;
+            border: 2px solid #ffeb3b;
         }
 
-        /* Menu Section */
-        .menu-section {
-            padding: 40px 20px;
-            max-width: 1100px;
+        .menu-container {
+            padding: 20px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .section-title {
-            font-size: 2rem;
+        .category-title {
+            font-size: 1.8rem;
             color: #ff9800;
-            margin-bottom: 30px;
+            margin: 30px 0 15px 0;
             border-bottom: 2px solid #ff9800;
             display: inline-block;
             padding-bottom: 5px;
@@ -68,59 +65,86 @@
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 15px;
         }
 
         .menu-card {
             background-color: #1e1e1e;
-            border: 2px solid #d32f2f;
-            border-radius: 12px;
-            padding: 15px 10px;
-            transition: transform 0.2s;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
 
-        .menu-card:hover {
-            transform: scale(1.05);
-            border-color: #ffeb3b;
+        .item-info {
+            width: 100%;
+            margin-bottom: 10px;
         }
 
-        .menu-card h3 {
+        .item-name-en {
+            font-size: 1.1rem;
             color: #ffffff;
-            font-size: 1.2rem;
+            font-weight: bold;
         }
 
-        /* Owner & Contact Section */
+        .item-name-ur {
+            font-size: 1rem;
+            color: #bbb;
+            margin-bottom: 8px;
+        }
+
+        .item-price {
+            font-size: 1.3rem;
+            color: #ffeb3b;
+            font-weight: bold;
+            background-color: #d32f2f;
+            padding: 3px 12px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        .wa-btn {
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            width: 100%;
+            display: block;
+            margin-top: 8px;
+        }
+
         .contact-section {
             background-color: #1e1e1e;
             padding: 30px 20px;
-            margin-top: 30px;
-            border-top: 4px solid #d32f2f;
-        }
-
-        .owner-name {
-            font-size: 1.8rem;
-            color: #ffeb3b;
-            margin-bottom: 15px;
+            margin-top: 40px;
+            border-top: 3px solid #d32f2f;
         }
 
         .phone-numbers {
             font-size: 1.3rem;
-            margin-bottom: 15px;
+            margin: 15px 0;
             direction: ltr;
         }
 
         .phone-numbers a {
-            color: #4caf50;
+            color: #25d366;
             text-decoration: none;
             font-weight: bold;
         }
 
         .address {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #ff9800;
             background-color: #2a2a2a;
-            padding: 10px;
+            padding: 12px;
             border-radius: 8px;
             display: inline-block;
             margin-top: 10px;
@@ -129,48 +153,228 @@
         footer {
             padding: 15px;
             background-color: #000000;
-            color: #888;
-            font-size: 0.9rem;
+            color: #777;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header / Logo -->
+    <!-- Header -->
     <header>
-        <div class="logo-title">🔥 Zingoz 🔥</div>
+        <div class="logo-title">🔥 ZINGOZ 🔥</div>
         <div class="tagline">Taste the Zing</div>
         <div class="free-delivery">🛵 FREE DELIVERY</div>
     </header>
 
-    <!-- Menu Section -->
-    <div class="menu-section">
-        <h2 class="section-title">ہمارا مینو (Menu)</h2>
+    <div class="menu-container">
+
+        <!-- Fast Food -->
+        <h2 class="category-title">🍔 Fast Food / فاسٹ فوڈ</h2>
         <div class="menu-grid">
-            <div class="menu-card"><h3>پیزا</h3></div>
-            <div class="menu-card"><h3>زنگر برگر</h3></div>
-            <div class="menu-card"><h3>چکن برگر</h3></div>
-            <div class="menu-card"><h3>پراٹھا رول</h3></div>
-            <div class="menu-card"><h3>زنگر شوارما</h3></div>
-            <div class="menu-card"><h3>لوڈڈ فرائز</h3></div>
-            <div class="menu-card"><h3>دہی بھلے</h3></div>
-            <div class="menu-card"><h3>سموسہ چاٹ</h3></div>
-            <div class="menu-card"><h3>شامی انڈا برگر</h3></div>
-            <div class="menu-card"><h3>چکن شوارما</h3></div>
-            <div class="menu-card"><h3>ہاٹ ونگز</h3></div>
-            <div class="menu-card"><h3>فرائز</h3></div>
-            <div class="menu-card"><h3>اسپیشل سلیڈ</h3></div>
-            <div class="menu-card"><h3>فروٹ چاٹ</h3></div>
-            <div class="menu-card"><h3>کریم چاٹ</h3></div>
-            <div class="menu-card"><h3>ملک شیک</h3></div>
-            <div class="menu-card"><h3>فریش جوس</h3></div>
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Zinger Burger</div>
+                    <div class="item-name-ur">زنگر برگر</div>
+                    <span class="item-price">Rs. 280</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Zinger%20Burger" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Zinger Shawarma</div>
+                    <div class="item-name-ur">زنگر شوارما</div>
+                    <span class="item-price">Rs. 220</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Zinger%20Shawarma" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Single Egg Burger</div>
+                    <div class="item-name-ur">سنگل انڈا برگر</div>
+                    <span class="item-price">Rs. 150</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Single%20Egg%20Burger" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Double Egg Burger</div>
+                    <div class="item-name-ur">ڈبل انڈا برگر</div>
+                    <span class="item-price">Rs. 180</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Double%20Egg%20Burger" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Shawarma</div>
+                    <div class="item-name-ur">شوارما</div>
+                    <span class="item-price">Rs. 200</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Shawarma" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Paratha Roll</div>
+                    <div class="item-name-ur">پراٹھا رول</div>
+                    <span class="item-price">Rs. 280</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Paratha%20Roll" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Chicken Patty Burger</div>
+                    <div class="item-name-ur">چکن پیٹی برگر</div>
+                    <span class="item-price">Rs. 240</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Chicken%20Patty%20Burger" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">French Fries</div>
+                    <div class="item-name-ur">فرینچ فرائز</div>
+                    <span class="item-price">Rs. 200</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20French%20Fries" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Hot Wings (12 Pcs)</div>
+                    <div class="item-name-ur">ہاٹ ونگز 12 پیس</div>
+                    <span class="item-price">Rs. 600</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Hot%20Wings" class="wa-btn">WhatsApp Order</a>
+            </div>
         </div>
+
+        <!-- Juices & Shakes -->
+        <h2 class="category-title">🥤 Juices & Shakes / جوسز اینڈ شیکس</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Mint Margarita</div>
+                    <div class="item-name-ur">منٹ مارگریٹا</div>
+                    <span class="item-price">Rs. 150</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Mint%20Margarita" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Mango Shake</div>
+                    <div class="item-name-ur">مینگو شیک</div>
+                    <span class="item-price">Rs. 200</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Mango%20Shake" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Banana Shake</div>
+                    <div class="item-name-ur">بنانا شیک</div>
+                    <span class="item-price">Rs. 160</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Banana%20Shake" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Peach Juice</div>
+                    <div class="item-name-ur">آڑو جوس</div>
+                    <span class="item-price">Rs. 160</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Peach%20Juice" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Apple Shake</div>
+                    <div class="item-name-ur">سیب شیک</div>
+                    <span class="item-price">Rs. 250</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Apple%20Shake" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Almond Date Shake</div>
+                    <div class="item-name-ur">بادام کھجور شیک</div>
+                    <span class="item-price">Rs. 320</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Almond%20Date%20Shake" class="wa-btn">WhatsApp Order</a>
+            </div>
+        </div>
+
+        <!-- Specials & Chaat -->
+        <h2 class="category-title">🍲 Cream & Fruit Chaat / کریم اینڈ فروٹ چاٹ</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Chicken Biryani</div>
+                    <div class="item-name-ur">چکن بریانی</div>
+                    <span class="item-price">Rs. 330</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Chicken%20Biryani" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Dahi Bhallay</div>
+                    <div class="item-name-ur">دہی بھلے</div>
+                    <span class="item-price">Rs. 120</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Dahi%20Bhallay" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Cream Chaat Full</div>
+                    <div class="item-name-ur">کریم چاٹ فل</div>
+                    <span class="item-price">Rs. 350</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Cream%20Chaat%20Full" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Cream Chaat Half</div>
+                    <div class="item-name-ur">کریم چاٹ ہاف</div>
+                    <span class="item-price">Rs. 200</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Cream%20Chaat%20Half" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Fruit Chaat</div>
+                    <div class="item-name-ur">فروٹ چاٹ</div>
+                    <span class="item-price">Rs. 250</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=I%20want%20to%20order%20Fruit%20Chaat" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-info">
+                    <div class="item-name-en">Pizza</div>
+                    <div class="item-name-ur">پیزا</div>
+                    <span class="item-price">Coming Soon</span>
+                </div>
+                <a href="https://wa.me/923257832436?text=Is%20Pizza%20Available?" class="wa-btn">Inquire on WhatsApp</a>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Contact & Address Section -->
+    <!-- Contact & Location -->
     <div class="contact-section">
-        <div class="owner-name">پروپرائیٹر: شہریار خان</div>
-        
+        <h3>آرڈر کے لیے رابطہ کریں</h3>
         <div class="phone-numbers">
             📞 <a href="tel:03257832436">0325-7832436</a> <br>
             📞 <a href="tel:03404988924">0340-4988924</a>
