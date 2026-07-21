@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zingoz - Taste the Zing</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(180deg, #d32f2f, #121212);
+            padding: 40px 20px;
+        }
+
+        .logo-title {
+            font-size: 3rem;
+            color: #ffeb3b;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .free-delivery {
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #ff9800;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ff9800;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .menu-card {
+            background-color: #1e1e1e;
+            border: 2px solid #d32f2f;
+            border-radius: 12px;
+            padding: 15px 10px;
+            transition: transform 0.2s;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+            border-color: #ffeb3b;
+        }
+
+        .menu-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
+        /* Owner & Contact Section */
+        .contact-section {
+            background-color: #1e1e1e;
+            padding: 30px 20px;
+            margin-top: 30px;
+            border-top: 4px solid #d32f2f;
+        }
+
+        .owner-name {
+            font-size: 1.8rem;
+            color: #ffeb3b;
+            margin-bottom: 15px;
+        }
+
+        .phone-numbers {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            direction: ltr;
+        }
+
+        .phone-numbers a {
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .address {
+            font-size: 1.3rem;
+            color: #ff9800;
+            background-color: #2a2a2a;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            padding: 15px;
+            background-color: #000000;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Logo -->
+    <header>
+        <div class="logo-title">🔥 Zingoz 🔥</div>
+        <div class="tagline">Taste the Zing</div>
+        <div class="free-delivery">🛵 FREE DELIVERY</div>
+    </header>
+
+    <!-- Menu Section -->
+    <div class="menu-section">
+        <h2 class="section-title">ہمارا مینو (Menu)</h2>
+        <div class="menu-grid">
+            <div class="menu-card"><h3>پیزا</h3></div>
+            <div class="menu-card"><h3>زنگر برگر</h3></div>
+            <div class="menu-card"><h3>چکن برگر</h3></div>
+            <div class="menu-card"><h3>پراٹھا رول</h3></div>
+            <div class="menu-card"><h3>زنگر شوارما</h3></div>
+            <div class="menu-card"><h3>لوڈڈ فرائز</h3></div>
+            <div class="menu-card"><h3>دہی بھلے</h3></div>
+            <div class="menu-card"><h3>سموسہ چاٹ</h3></div>
+            <div class="menu-card"><h3>شامی انڈا برگر</h3></div>
+            <div class="menu-card"><h3>چکن شوارما</h3></div>
+            <div class="menu-card"><h3>ہاٹ ونگز</h3></div>
+            <div class="menu-card"><h3>فرائز</h3></div>
+            <div class="menu-card"><h3>اسپیشل سلیڈ</h3></div>
+            <div class="menu-card"><h3>فروٹ چاٹ</h3></div>
+            <div class="menu-card"><h3>کریم چاٹ</h3></div>
+            <div class="menu-card"><h3>ملک شیک</h3></div>
+            <div class="menu-card"><h3>فریش جوس</h3></div>
+        </div>
+    </div>
+
+    <!-- Contact & Address Section -->
+    <div class="contact-section">
+        <div class="owner-name">پروپرائیٹر: شہریار خان</div>
+        
+        <div class="phone-numbers">
+            📞 <a href="tel:03257832436">0325-7832436</a> <br>
+            📞 <a href="tel:03404988924">0340-4988924</a>
+        </div>
+
+        <div class="address">
+            📍 **پتہ:** پہرے ڈاکوٹ مین اڈا کلیانوالہ
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Zingoz Restaurant. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
